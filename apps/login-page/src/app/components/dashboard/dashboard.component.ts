@@ -3,13 +3,18 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'login-page-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
-
+  token: any;
+  
   ngOnInit(): void {
+    
+    this._getToken();
+  }
+
+  private _getToken() {
+    this.token = localStorage.getItem('token');
   }
 
 }
