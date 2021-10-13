@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <div class="logo">
+    </div>
+    <div class="login">
+        <h2>LoginPage</h2>
+        <form action="" [formGroup]="form">
+            <div class="inputs">
+                <input type="email" id="login" placeholder="Email" formControlName="email">
+                <br>
+                <br>
+                <input type="password" name="" id="login" placeholder="Password" formControlName="password"> 
+            </div>
+            <div class="buttons">
+                <input type="button" value="Submit" id="buttons" (click)="Submit()">
+                <input type="button" value="New Account" id="buttons" (click)="newuser()">
+            </div>
+        </form>
+    </div>
+</div>

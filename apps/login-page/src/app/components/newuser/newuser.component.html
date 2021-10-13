@@ -1,0 +1,24 @@
+<div class="wrapper">
+    <div class="logo">
+    </div>
+    <div class="login">
+        <form action="" [formGroup]="form">
+        <h2>LoginPage</h2>
+        <div class="inputs">
+            <input type="email" id="login" placeholder="Email" formControlName="email">
+            <br>
+            <br>
+            <input type="password" id="login" placeholder="Password" formControlName="password">
+            <br>
+            <br>
+            <input type="text" id="login" placeholder="Name" formControlName="name">
+            <br>
+            <br>
+            <input type="number" id="login" placeholder="Phone number" formControlName="phone"> 
+        </div>
+    </form>
+        <div class="buttons">
+            <input type="button" value="Submit" id="buttons" (click)="Submit()">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+.wrapper {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  border-radius: 12px;
+  align-items: center;
+  position: relative;
+  box-shadow: 19px 10px 40px -20px;
+  .logo {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 90px;
+    animation: animate 1s linear 0.2s infinite alternate;
+  }
+  .login {
+    padding: 100px;
+    h2 {
+      color: white;
+    }
+
+    .inputs {
+      #login {
+        border-radius: 12rem;
+        height: 30px;
+        outline: none;
+        border: none;
+        color: rgb(34, 36, 36);
+        padding: 5px;
+        font-size: larger;
+      }
+    }
+
+    .buttons {
+      margin-top: 15px;
+      #buttons {
+        margin-right: 10px;
+        border-radius: 12rem;
+        height: inherit;
+        outline: none;
+        border: none;
+        color: rgb(39, 41, 41);
+        padding: 9px;
+        font-size: 1.2em;
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+@keyframes animate {
+  10% {
+    height: 70px;
+    width: 70px;
+    border-radius: 40%;
+    transform: rotate(10deg);
+  }
+  100% {
+    height: 90px;
+    width: 90px;
+    border-radius: 20%;
+    transform: rotate(60deg);
+  }
+}
