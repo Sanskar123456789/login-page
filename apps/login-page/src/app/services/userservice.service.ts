@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class UserserviceService {
   
-  api = "http://localhost:3000/userlogin/users"
+  // api = "http://localhost:3000/userlogin/users" build api
+  api = "https://auth-login1.herokuapp.com/userlogin/users";
   constructor(private http: HttpClient) { }
 
   // for new user 
